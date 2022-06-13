@@ -2,9 +2,11 @@
 var path = require('path');
 
 module.exports = {
-  entry: './src/entry.jsx',
+  context: __dirname,
+  entry: "./index.jsx",
   output: {
-    filename: './bundle.js',
+    path: path.resolve(__dirname),
+    filename: "bundle.js"
   },
   module: {
     rules: [

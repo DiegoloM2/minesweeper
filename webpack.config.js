@@ -3,10 +3,10 @@ var path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: "./index.jsx",
+  entry: "./src/entry.jsx",
   output: {
     path: path.resolve(__dirname),
-    filename: "bundle.js"
+    filename: "./src/bundle.js"
   },
   module: {
     rules: [

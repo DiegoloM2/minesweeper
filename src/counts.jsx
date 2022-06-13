@@ -1,5 +1,5 @@
 import React from 'react';
-class Counts extends React.component {
+class Counts extends React.Component {
 
     componentWillMount() { debugger }
     componentDidMount () { debugger }
@@ -12,7 +12,7 @@ class Counts extends React.component {
         return (
         <ul>
             {
-                props.previousCounts.map((count) => (<li>{count}</li>))
+                this.props.previousCounts.map((count) => (<li>{count}</li>))
             }
         </ul>
         )

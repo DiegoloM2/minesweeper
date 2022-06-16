@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ClickCounter from "./clickCounter.jsx"
+import Game from "./components/game.jsx"
 
 document.addEventListener("DOMContentLoaded", () => {
 
     const root = document.getElementById("root");
-    ReactDOM.render(<ClickCounter />, root);
+    ReactDOM.render(<Game />, root);
 
 })

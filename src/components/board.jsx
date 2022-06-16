@@ -9,7 +9,7 @@ class Board extends React.Component {
     render () {
         console.log(this.props.board.grid);
         return (
-            <div className = "board-grid">
+            <div className = {this.props.blur ? "board-grid": ''}>
                 {
                     this.props.board.grid.map(
                         (row, Ridx) => {
